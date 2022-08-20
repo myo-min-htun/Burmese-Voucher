@@ -326,7 +326,7 @@ const Voucher = () => {
                     <div ref={printRef} style={{ display: 'none' }}>
                          <div className=' py-1 text-center font-noto font-bold text-2xl tracking-wide'> {businessInfo.businessName} </div>
                          <div className=' font-noto text-center text-base'>{businessInfo.businessType} </div>
-                         <div className='py-1 font-noto text-center text-sm'> လိပ်စာ - {businessInfo.address} </div>
+                         <div className='py-1 font-noto text-center text-sm'> {businessInfo.address} </div>
                          <div className='font-noto text-center text-sm'> ဖုန်း - {businessInfo.phone} </div>
                          <Segment>
                               <div className='font-noto text-sm text-right pr-3'>

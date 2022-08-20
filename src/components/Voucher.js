@@ -169,7 +169,7 @@ const Voucher = () => {
                     <div className=' py-1 lg:py-2 grid place-content-center font-noto font-bold text-xl lg:text-2xl tracking-wider'> {businessInfo.businessName} </div>
                     <div className='py-1 lg:py-2 font-noto text-bale lg:text-xl grid place-content-center'>{businessInfo.businessType} </div>
                     <div className='lg:flex lg:place-content-center lg:gap-x-10'>
-                         <div className='py-1 font-noto text-center text-sm lg:text-base'> လိပ်စာ - {businessInfo.address} </div>
+                         <div className='py-1 font-noto text-center text-sm lg:text-base'> {businessInfo.address} </div>
                          <div className='py-1 font-noto text-center text-sm lg:text-base'> ဖုန်း - {businessInfo.phone} </div>
                     </div>
                     <div className='px-0 py-2 lg:mt-2 lg:-mb-4'>
@@ -324,8 +324,8 @@ const Voucher = () => {
                {/* PRINT DOCUMENT  */}
                <div className='mt-56'>
                     <div ref={printRef} style={{ display: 'none' }}>
-                         <div className=' py-1 text-center font-noto font-bold text-2xl tracking-wider'> {businessInfo.businessName} </div>
-                         <div className=' font-noto text-center text-base tracking-wide'>{businessInfo.businessType} </div>
+                         <div className=' py-1 text-center font-noto font-bold text-2xl tracking-wide'> {businessInfo.businessName} </div>
+                         <div className=' font-noto text-center text-base'>{businessInfo.businessType} </div>
                          <div className='py-1 font-noto text-center text-sm'> လိပ်စာ - {businessInfo.address} </div>
                          <div className='font-noto text-center text-sm'> ဖုန်း - {businessInfo.phone} </div>
                          <Segment>
